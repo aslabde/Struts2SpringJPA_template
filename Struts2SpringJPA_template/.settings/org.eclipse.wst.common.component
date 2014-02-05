@@ -2,6 +2,7 @@
     <wb-module deploy-name="Struts2SpringJPA_template">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/tk.ebalsa.strutsok.actions"/>
+        <wb-resource deploy-path="/" source-path="/WebContent/WEB-INF/pages"/>
         <property name="java-output-path" value="/Struts2SpringJPA_template/build/classes"/>
         <property name="context-root" value="Struts2SpringJPA_template"/>
     </wb-module>

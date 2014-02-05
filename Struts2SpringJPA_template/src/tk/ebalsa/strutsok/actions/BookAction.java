@@ -3,20 +3,24 @@ package tk.ebalsa.strutsok.actions;
 import java.util.ArrayList;
 import java.util.List;
 
-
+import org.apache.struts2.convention.annotation.Action;
+import org.apache.struts2.convention.annotation.Result;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 
 import tk.ebalsa.strutsok.bo.BookBo;
 import tk.ebalsa.strutsok.model.Book;
 
+import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 
-public class BookAction  {
+@Controller
+public class BookAction extends ActionSupport implements ModelDriven  {
 	
-	Book book = new Book();
-	List<Book> bookList = new ArrayList<Book>();
+	private Book book = new Book();
+	private List<Book> bookList = new ArrayList<Book>();
 		
-	BookBo bookBo;
+	private BookBo bookBo;
 	
 	public Object getModel() {
 		return book;
@@ -42,6 +46,10 @@ public class BookAction  {
 	//BUSINESS OPERATIONS:
 	
 	//Save book
+	
+	@Action(value="/addBook", results={
+			@Result(name="success",location="pages/success.jsp")
+		})	
 	public String addBook() throws Exception{
 		
 		//save

@@ -3,11 +3,13 @@ package tk.ebalsa.strutsok.bo;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import tk.ebalsa.strutsok.bo.BookBo;
 import tk.ebalsa.strutsok.model.Book;
 import tk.ebalsa.strutsok.persistence.BookRepository;
-
+@Service
 public class BookBoImpl implements BookBo {
 
 	private BookRepository bookrepository;
