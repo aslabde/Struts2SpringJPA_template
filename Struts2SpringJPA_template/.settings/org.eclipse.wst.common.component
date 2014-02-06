@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
     <wb-module deploy-name="Struts2SpringJPA_template">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/tk.ebalsa.strutsok.actions"/>
-        <wb-resource deploy-path="/" source-path="/WebContent/WEB-INF/pages"/>
+        <wb-resource deploy-path="/" source-path="/target"/>
+        <wb-resource deploy-path="/" source-path="/src.main.java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/origin"/>
         <property name="java-output-path" value="/Struts2SpringJPA_template/build/classes"/>
         <property name="context-root" value="Struts2SpringJPA_template"/>
     </wb-module>
